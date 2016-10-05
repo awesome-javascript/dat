@@ -97,7 +97,6 @@ general options
 
   --version, -v         get installed dat version
   --temp                use in-memory database instead of .dat folder
-  --webrtc              connect to webrtc peers via electron-webrtc
   --doctor              run dat doctor
   --quiet, -q           output only dat-link, no progress information
   --debug               show debugging output
@@ -189,10 +188,6 @@ When you run a command, Dat creates a hidden folder, `.dat`, in the directory sp
 #### Temporary Database
 
 Use the `--temp` option to keep the metadata in memory instead of the `.dat` folder.
-
-### Sharing or Download files with [dat.land](http://dat.land)
-
-You can use the `--webrtc` option to share files to dat.land. You'll need to install `electron-webrtc` in order for this to work.
 
 ## Troubleshooting
 

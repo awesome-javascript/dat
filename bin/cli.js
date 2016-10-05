@@ -5,7 +5,7 @@ var mkdirp = require('mkdirp')
 
 var args = require('minimist')(process.argv.splice(2), {
   alias: {p: 'port', q: 'quiet', v: 'version'},
-  boolean: ['snapshot', 'exit', 'list', 'quiet', 'version', 'utp', 'temp', 'webrtc', 'ignore-hidden'],
+  boolean: ['snapshot', 'exit', 'quiet', 'version', 'utp', 'temp', 'ignore-hidden'],
   default: {
     logspeed: 200,
     'ignore-hidden': true
@@ -26,14 +26,6 @@ if (args.version) {
   var pkg = require('../package.json')
   console.log(pkg.version)
   process.exit(0)
-}
-
-if (args.webrtc) {
-  try {
-    args.webrtc = require('electron-webrtc')()
-  } catch (e) {
-    onerror('npm install -g electron-webrtc for webrtc support')
-  }
 }
 
 var isShare = false
@@ -86,5 +78,4 @@ function isDirectory (val, quiet) {
 function onerror (msg) {
   console.error(msg + '\n')
   process.exit(1)
-  // require('../usage')('root.txt')
 }

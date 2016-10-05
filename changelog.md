@@ -10,6 +10,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 * Remove headless option from electron-webrtc. It is detected for us.
 
+### Removed
+* `--webrtc` option.
+
 ## 11.3.1 - 2016-09-21
 ### Fixed
 * Use `--quiet` mode with `--debug` so output is easier to read.
