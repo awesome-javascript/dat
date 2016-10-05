@@ -24,7 +24,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "chalk": "^1.1.1",
-    "dat-js": "joehand/dat-js#TheLinkNet",
+    "dat-js": "joehand/dat-js#fix/swarms",
     "memdb": "^1.3.1",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
